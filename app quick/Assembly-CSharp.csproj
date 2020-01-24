@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Points.cs" />
+    <None Include="Assets\FREE Food Pack\Shaders\Food.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/SalesFromscratchAgen/Documents/Roumi/GitHub/touch-app-game/app quick/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

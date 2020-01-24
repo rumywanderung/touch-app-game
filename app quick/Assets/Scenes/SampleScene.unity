@@ -329,7 +329,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -390,6 +390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NumGhosts: 0
+  i: 0
 --- !u!4 &1293051525
 Transform:
   m_ObjectHideFlags: 0

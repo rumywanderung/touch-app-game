@@ -62,10 +62,10 @@ public class Points : MonoBehaviour
 
             for (int i = 0; i < 11; i++)
             {
-                if (Physics.Raycast(ray, out hit) && hit.collider.gameObject.tag == "cube1")
+                if (Physics.Raycast(ray, out hit))
                    {
-                     if (cubeRend.gameObject.tag == "cube1")
-                     {
+                     //if (cubeRend.gameObject.tag == "cube1")
+                     //{
                          Debug.DrawRay(ray.origin, ray.direction * 100, Color.yellow, 100F);
                          //this.cubeRend.material.SetColor("_Color", Color.red);
                          Destroy(this.gameObject);
@@ -76,4 +76,4 @@ public class Points : MonoBehaviour
             
         }
     }
-}
+
