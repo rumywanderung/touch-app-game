@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8811930240000226543}
   m_Layer: 0
   m_Name: Burger
-  m_TagString: cube1
+  m_TagString: cube10
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

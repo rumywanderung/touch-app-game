@@ -1,38 +1,43 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public int NumGhosts;
     float Timer;
-    public int i;
+    int i;
+    float j;
+    public Text score;
 
     void Start()
     {
-        NumGhosts = 10;
         Timer = 0;
         i = 0;
+        j = 0;
     }
 
     void Update()
     {
+       
         i++;
         Timer += Time.deltaTime;
         //Debug.Log("Timer = " + Timer);
 
         #region Create Ghosts
-        if (i >= 3000 || Timer >= 10)
+        if (i >= 500 || Timer >= 10)
         {
             return;
         }
 
-        else if (i < 3000 && i % 11 == 0)
+        else if (i < 500 && i % 15 == 0)
         {
-            Debug.Log("else");
-            Vector3 randomized = new Vector3(Random.Range(10F, -10F), Random.Range(0F, 12F), 0F);
-            GameObject Ghost = Resources.Load("Burger") as GameObject;
-            Instantiate(Ghost, randomized, Quaternion.identity);
+            //Debug.Log("else");
+            Vector3 randomized = new Vector3(Random.Range(2F, -2F), Random.Range(-1F, 7F), 0F);
+            GameObject Burger = Resources.Load("Burger") as GameObject;
+            Instantiate(Burger, randomized, Quaternion.identity);
+            //Burger.gameObject.tag = "cube" + j.ToString();
+            //j++;
         }
     }
        
