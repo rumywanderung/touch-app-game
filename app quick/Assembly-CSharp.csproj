@@ -62,8 +62,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\CanvaDontDestroy.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\ObjectDontDestroy.cs" />
     <Compile Include="Assets\Scripts\Points.cs" />
     <Compile Include="Assets\Scripts\PointsManager.cs" />
     <None Include="Assets\FREE Food Pack\Shaders\Food.shader" />

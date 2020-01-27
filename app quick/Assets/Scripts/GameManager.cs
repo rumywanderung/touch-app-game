@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public Text score; //score text
     public PointsManager pointsmanager;
     [HideInInspector]
-    bool loaded = false;
+    public bool loaded = false;
 
     private void Awake()
     {
@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     {
         Timer = 0;
         i = 0;
+
     }
 
     void LoadEndScene()
@@ -40,8 +41,6 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("position: " + score.transform.position);
-
         i++;
         Timer += Time.deltaTime;
 
@@ -50,16 +49,19 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Time's Up!");
             score.transform.position = new Vector3(410F, 800F, 0F);
-            score.text = "SCORE FINAL: " + pointsmanager.myPoints.ToString();
+            //GameObject panel = score.GetComponentInParent<GameObject>();
+            //panel.transform.position = new Vector3(410F, 800F, 0F);
             LoadEndScene();
+            score.text = "SCORE FINAL: " + pointsmanager.myPoints.ToString();
+            
             return;
         }
         
         else if (i < 500 && i % 15 == 0)
         {
             //Debug.Log("else");
-            Vector3 randomized = new Vector3(Random.Range(2F, -2F), Random.Range(-1F, 7F), 0F);
-            GameObject Objects = Resources.Load("Burger") as GameObject;
+            Vector3 randomized = new Vector3(Random.Range(1F, 10F), Random.Range(5F, 20F), 0F);
+            GameObject Objects = Resources.Load("Snowmen") as GameObject;
             Instantiate(Objects, randomized, Quaternion.identity);
             //Burger.gameObject.tag = "cube" + j.ToString();
             //j++;
