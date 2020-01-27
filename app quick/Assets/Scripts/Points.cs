@@ -13,7 +13,7 @@ public class Points : MonoBehaviour
     Ray ray;
     GameManager manager;
     [HideInInspector]
-    public int myPoints;
+    public int myPoints;  
 
     void Start()
     {

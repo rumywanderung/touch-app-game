@@ -11,11 +11,10 @@ GameObject:
   - component: {fileID: 6990420279593672568}
   - component: {fileID: 3171717990971239573}
   - component: {fileID: 2687395052418069889}
-  - component: {fileID: 8419204384479408993}
   - component: {fileID: 8811930240000226543}
   m_Layer: 0
   m_Name: Burger
-  m_TagString: cube10
+  m_TagString: clickableObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,18 +78,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &8419204384479408993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 362079572054108168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e8e27026dacf644eb5db821c901523e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &8811930240000226543
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -17,6 +17,7 @@ TagManager:
   - cube11
   - cube12
   - cube13
+  - clickableObject
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - snowman
   - 
   - 
   - 
