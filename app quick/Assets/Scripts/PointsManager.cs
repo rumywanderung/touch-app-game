@@ -42,13 +42,12 @@ public class PointsManager : MonoBehaviour
 
             ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
             RaycastHit hit;
-            Debug.DrawRay(ray.origin, ray.direction * 100, Color.yellow, 100F);
 
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity) && hit.collider.gameObject.tag == "clickableObject")
             {
                 if (hit.collider != null)
                 {
-                    //myPoints += 1;
+                    myPoints += 1;
                     //manager.score.text = myPoints.ToString();
                     Destroy(hit.transform.gameObject);
                 }
@@ -63,11 +62,13 @@ public class PointsManager : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
-            
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity) && hit.collider.gameObject.tag == "clickableObject")
                 {
+                if (hit.collider != null){
                     myPoints += 1;
                     Destroy(hit.transform.gameObject);
+                }
+                   
                     //}
                 }
             

@@ -9,12 +9,12 @@ public class ObjectDontDestroy : MonoBehaviour
     private Scene currentScene;
 
 
- /*   void Awake()
+    void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
-        currentScene = SceneManager.GetActiveScene();
+        //currentScene = SceneManager.GetActiveScene();
     }
-
+    /*
     void Update()
     {
         if (this.gameObject.tag == "Canvas")

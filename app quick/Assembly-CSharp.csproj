@@ -62,11 +62,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Fonts\Script\scriptTexttest.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\GameManagerStart.cs" />
     <Compile Include="Assets\Scripts\ObjectDontDestroy.cs" />
     <Compile Include="Assets\Scripts\Points.cs" />
     <Compile Include="Assets\Scripts\PointsManager.cs" />
+    <None Include="Assets\Fonts\Documentation\JazzCreateBubble_VersionHistory_1.1.txt" />
     <None Include="Assets\FREE Food Pack\Shaders\Food.shader" />
+    <None Include="Assets\Fonts\Documentation\JazzCreateAltKeys_BubbleFont.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/SalesFromscratchAgen/Documents/Roumi/GitHub/touch-app-game/app quick/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
