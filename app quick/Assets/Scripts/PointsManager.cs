@@ -13,7 +13,7 @@ public class PointsManager : MonoBehaviour
     Ray ray;
     GameManager manager;
     [HideInInspector]
-    public int myPoints;
+    public float myPoints;
 
     private void Awake()
     {
@@ -37,43 +37,41 @@ public class PointsManager : MonoBehaviour
 
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
-            //Touch touch = Input.GetTouch(1);
-            //Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
-
             ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit, Mathf.Infinity) && hit.collider.gameObject.tag == "clickableObject")
             {
-                if (hit.collider != null)
-                {
                     myPoints += 1;
-                    //manager.score.text = myPoints.ToString();
                     Destroy(hit.transform.gameObject);
-                }
             }
-
+            else if (Physics.Raycast(ray, out hit, Mathf.Infinity) && hit.collider.gameObject.tag == "clickableObject3")
+            {
+                myPoints += 3;
+                Destroy(hit.transform.gameObject);
+            }
         }
 
         #endregion
 
-        if (Input.GetMouseButtonDown(0) == true)
+    /*  if (Input.GetMouseButtonDown(0) == true)
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity) && hit.collider.gameObject.tag == "clickableObject")
                 {
-                if (hit.collider != null){
+                    
                     myPoints += 1;
                     Destroy(hit.transform.gameObject);
+                    
                 }
-                   
-                    //}
-                }
-            
-
-        }
+                else if (Physics.Raycast(ray, out hit, Mathf.Infinity) && hit.collider.gameObject.tag == "clickableObject3")
+                 {
+                    myPoints += 3;
+                    Destroy(hit.transform.gameObject);
+                    }
+        }*/
     }
 
 }

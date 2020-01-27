@@ -6,6 +6,9 @@ TagManager:
   tags:
   - clickableObject
   - Canvas
+  - cube1
+  - clickableObject2
+  - clickableObject3
   layers:
   - Default
   - TransparentFX

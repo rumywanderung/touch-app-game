@@ -9,8 +9,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -36,19 +38,19 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9326}
+      Script: {instanceID: 9328}
     - Class: 114
-      Script: {instanceID: 9332}
+      Script: {instanceID: 9334}
     - Class: 114
-      Script: {instanceID: 9338}
+      Script: {instanceID: 9340}
     - Class: 114
-      Script: {instanceID: 9346}
-    - Class: 114
-      Script: {instanceID: 9382}
+      Script: {instanceID: 9348}
     - Class: 114
       Script: {instanceID: 9384}
     - Class: 114
-      Script: {instanceID: 10134}
+      Script: {instanceID: 9386}
+    - Class: 114
+      Script: {instanceID: 10138}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -87,23 +89,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9326}
+      Script: {instanceID: 9328}
     - Class: 114
-      Script: {instanceID: 9332}
+      Script: {instanceID: 9334}
     - Class: 114
-      Script: {instanceID: 9338}
-    - Class: 114
-      Script: {instanceID: 9346}
-    - Class: 114
-      Script: {instanceID: 9382}
+      Script: {instanceID: 9340}
     - Class: 114
       Script: {instanceID: 9384}
     - Class: 114
-      Script: {instanceID: 10086}
+      Script: {instanceID: 9386}
     - Class: 114
-      Script: {instanceID: 10134}
+      Script: {instanceID: 10090}
     - Class: 114
-      Script: {instanceID: 10564}
+      Script: {instanceID: 10138}
+    - Class: 114
+      Script: {instanceID: 10568}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -160,23 +160,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9326}
+      Script: {instanceID: 9288}
     - Class: 114
-      Script: {instanceID: 9332}
+      Script: {instanceID: 9328}
     - Class: 114
-      Script: {instanceID: 9338}
+      Script: {instanceID: 9334}
     - Class: 114
-      Script: {instanceID: 9346}
+      Script: {instanceID: 9340}
     - Class: 114
-      Script: {instanceID: 9382}
+      Script: {instanceID: 9348}
     - Class: 114
       Script: {instanceID: 9384}
     - Class: 114
-      Script: {instanceID: 9402}
+      Script: {instanceID: 9386}
     - Class: 114
-      Script: {instanceID: 10134}
+      Script: {instanceID: 9404}
     - Class: 114
-      Script: {instanceID: 12792}
+      Script: {instanceID: 10138}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -230,6 +230,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 4e72092140b40b6c7191f19784789d78
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManagerStart
   - hash:
       serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
@@ -682,6 +688,12 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
+      Hash: 3a0e00fe942082621120621a94d8ce08
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: scriptTexttest
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -838,7 +850,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: 668df58f43710bf3b3a477cec358fdac
+      Hash: 37fc880e739504fee6d15294cee749c2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PointsManager
@@ -854,21 +866,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 3a0e00fe942082621120621a94d8ce08
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: scriptTexttest
-  - hash:
-      serializedVersion: 2
-      Hash: 4e72092140b40b6c7191f19784789d78
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameManagerStart
   platform: 13
   scenePathNames:
   - Assets/Scenes/Start.unity
   - Assets/Scenes/Game.unity
   - Assets/Scenes/End.unity
-  playerPath: C:/Users/SalesFromscratchAgen/Documents/Roumi/quickApp3.apk
+  playerPath: C:/Users/SalesFromscratchAgen/Documents/Roumi/quickApp7.apk

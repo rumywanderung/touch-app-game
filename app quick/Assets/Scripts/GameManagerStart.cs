@@ -24,7 +24,7 @@ public class GameManagerStart : MonoBehaviour
         timeLeft -= Time.deltaTime;
         Debug.Log(i);
 
-        if (i%125 == 0)
+        if (i == 150)
         {
             timerText.text = "2";
         }
@@ -36,7 +36,7 @@ public class GameManagerStart : MonoBehaviour
 
         if (i <= 0)
         {
-            if (i <= -20) { SceneManager.LoadScene("Game"); }
+            if (i <= -80) { SceneManager.LoadScene("Game"); }
         }
     }
 }
