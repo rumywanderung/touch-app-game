@@ -45,15 +45,13 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(1.0f / Time.deltaTime);
         i++;
         Timer += Time.deltaTime;
 
         #region Create Objects
         if (i >= 1000 || Timer >= 10) //500 | 10
         {
-            Debug.Log("Time's Up!");
-            score.transform.position = new Vector3((Screen.width/2)+55, (Screen.height/2)+20, 0F);
+            score.transform.position = new Vector3((Screen.width/2)+100, (Screen.height/2)+20, 0F);
             LoadEndScene();
             score.text = "SCORE FINAL: " + pointsmanager.myPoints.ToString();
             
@@ -65,7 +63,6 @@ public class GameManager : MonoBehaviour
             Vector3 randomized = new Vector3(Random.Range(-1F, 14F), Random.Range(5F, 20F), 0F);
             int index = Random.Range(0, 3);
             Objects = Resources.Load(ObjectDict[index]) as GameObject;
-            Debug.Log(Objects);
             Instantiate(Objects, randomized, Quaternion.identity);
             //Burger.gameObject.tag = "cube" + j.ToString();
             //j++;

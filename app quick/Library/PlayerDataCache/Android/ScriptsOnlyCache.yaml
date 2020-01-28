@@ -9,8 +9,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -27,8 +29,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 4
       Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
     - Class: 28
@@ -37,15 +37,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
       Script: {instanceID: 0}
     - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 9332}
@@ -57,8 +53,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 9388}
     - Class: 114
       Script: {instanceID: 9390}
-    - Class: 114
-      Script: {instanceID: 10142}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -872,7 +866,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: 37fc880e739504fee6d15294cee749c2
+      Hash: fcbe8a506da1b0ab047c9af96a8bc157
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PointsManager
@@ -893,4 +887,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Start.unity
   - Assets/Scenes/Game.unity
   - Assets/Scenes/End.unity
-  playerPath: C:/Users/SalesFromscratchAgen/Documents/Roumi/quickAppTest.apk
+  playerPath: C:/Users/SalesFromscratchAgen/Documents/Roumi/quick_App1.apk

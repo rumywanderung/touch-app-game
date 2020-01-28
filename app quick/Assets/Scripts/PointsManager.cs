@@ -14,6 +14,7 @@ public class PointsManager : MonoBehaviour
     GameManager manager;
     [HideInInspector]
     public float myPoints;
+    public GameObject visualFX;
 
     private void Awake()
     {
@@ -43,18 +44,26 @@ public class PointsManager : MonoBehaviour
             if (Physics.Raycast(ray, out hit, Mathf.Infinity) && hit.collider.gameObject.tag == "clickableObject")
             {
                 myPoints += 1;
+                visualFX = Resources.Load("PlusOne") as GameObject;
+                Vector3 pos = new Vector3(hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y + 2, 0F);
+                Instantiate(visualFX, pos, Quaternion.identity);
                 Destroy(hit.transform.gameObject);
+                visualFX = null;
             }
             else if (Physics.Raycast(ray, out hit, Mathf.Infinity) && hit.collider.gameObject.tag == "clickableObject3")
             {
                 myPoints += 3;
+                visualFX = Resources.Load("PlusThree") as GameObject;
+                Vector3 pos = new Vector3(hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y + 2, 0F);
+                Instantiate(visualFX, pos, Quaternion.identity);
                 Destroy(hit.transform.gameObject);
+                visualFX = null;
             }
         }
 
         #endregion
 
-      /*  if (Input.GetMouseButtonDown(0) == true)
+       /* if (Input.GetMouseButtonDown(0) == true)
         {
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
@@ -64,13 +73,24 @@ public class PointsManager : MonoBehaviour
                 if (hit.collider.gameObject.tag == "clickableObject")
                 {
                     myPoints += 1;
+                    visualFX = Resources.Load("PlusOne") as GameObject;
+                    Vector3 pos = new Vector3(hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y + 2, 0F);
+                    Instantiate(visualFX, pos, Quaternion.identity);
                     Destroy(hit.transform.gameObject);
+                    visualFX = null;
+
                 }
                 else if (hit.collider.gameObject.tag == "clickableObject3")
                 {
                     myPoints += 3;
+                    visualFX = Resources.Load("PlusThree") as GameObject;
+                    Vector3 pos = new Vector3(hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y + 2, 0F);
+                    Instantiate(visualFX, pos, Quaternion.identity);
                     Destroy(hit.transform.gameObject);
+                    visualFX = null;
                 }
+
+                visualFX = null;
             }
         }*/
     }
