@@ -42,8 +42,8 @@ public class PointsManager : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, Mathf.Infinity) && hit.collider.gameObject.tag == "clickableObject")
             {
-                    myPoints += 1;
-                    Destroy(hit.transform.gameObject);
+                myPoints += 1;
+                Destroy(hit.transform.gameObject);
             }
             else if (Physics.Raycast(ray, out hit, Mathf.Infinity) && hit.collider.gameObject.tag == "clickableObject3")
             {
@@ -54,25 +54,26 @@ public class PointsManager : MonoBehaviour
 
         #endregion
 
-    /*  if (Input.GetMouseButtonDown(0) == true)
+      /*  if (Input.GetMouseButtonDown(0) == true)
         {
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
-                if (Physics.Raycast(ray, out hit, Mathf.Infinity) && hit.collider.gameObject.tag == "clickableObject")
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+            {
+                if (hit.collider.gameObject.tag == "clickableObject")
                 {
-                    
                     myPoints += 1;
                     Destroy(hit.transform.gameObject);
-                    
                 }
-                else if (Physics.Raycast(ray, out hit, Mathf.Infinity) && hit.collider.gameObject.tag == "clickableObject3")
-                 {
+                else if (hit.collider.gameObject.tag == "clickableObject3")
+                {
                     myPoints += 3;
                     Destroy(hit.transform.gameObject);
-                    }
+                }
+            }
         }*/
     }
-
 }
+
 

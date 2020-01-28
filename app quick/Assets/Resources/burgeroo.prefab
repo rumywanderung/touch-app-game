@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 3148674758836831173}
   - component: {fileID: 7940385104598247674}
   - component: {fileID: 9035634666282881518}
+  - component: {fileID: 1742807544720782560}
   m_Layer: 0
   m_Name: burger 1
   m_TagString: clickableObject
@@ -60,7 +61,7 @@ Transform:
   m_GameObject: {fileID: 7220396137459731233}
   m_LocalRotation: {x: -0.06162861, y: 0.70441604, z: -0.70441604, w: 0.061628282}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.18511006, y: 0.18511, z: 0.18511003}
+  m_LocalScale: {x: 0.28297776, y: 0.28297767, z: 0.3528449}
   m_Children: []
   m_Father: {fileID: 468621844496118137}
   m_RootOrder: 0
@@ -137,3 +138,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 0.0000017007585, z: 10.000001}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &1742807544720782560
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7220396137459731233}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9de007614f03351469c2b4cd092c3804, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
