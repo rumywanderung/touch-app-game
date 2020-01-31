@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
-        score.transform.position = new Vector3(((Screen.width / 2) + 10), (Screen.height - 250), 0F);
+        score.transform.position = new Vector3(((Screen.width / 2) + 8), (Screen.height - 250), 0F);
     }
     void Start()
     {
@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
         #region Create Objects
         if (i >= 1000 || Timer >= 10) //500 | 10
         {
-            score.transform.position = new Vector3(((Screen.width/2) - 25), (Screen.height/2)+290, 0F);
+            score.transform.position = new Vector3(((Screen.width/2) - 35), (Screen.height/2)+290, 0F);
             LoadEndScene();
             //score.text = "SCORE FINAL: " + pointsmanager.myPoints.ToString();
             score.text = pointsmanager.myPoints.ToString();
