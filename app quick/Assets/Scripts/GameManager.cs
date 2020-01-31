@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
+        score.transform.position = new Vector3(((Screen.width / 2) + 10), (Screen.height - 250), 0F);
     }
     void Start()
     {
@@ -51,26 +52,25 @@ public class GameManager : MonoBehaviour
         #region Create Objects
         if (i >= 1000 || Timer >= 10) //500 | 10
         {
-            score.transform.position = new Vector3((Screen.width/2)+100, (Screen.height/2)+20, 0F);
+            score.transform.position = new Vector3(((Screen.width/2) - 25), (Screen.height/2)+290, 0F);
             LoadEndScene();
-            score.text = "SCORE FINAL: " + pointsmanager.myPoints.ToString();
-            
+            //score.text = "SCORE FINAL: " + pointsmanager.myPoints.ToString();
+            score.text = pointsmanager.myPoints.ToString();
+
             return;
         }
         
         else if (i < 1000 && i % 17 == 0)
         {
-            Vector3 randomized = new Vector3(Random.Range(-1F, 14F), Random.Range(5F, 20F), 0F);
+            Vector3 randomized = new Vector3(Random.Range(0F, 12F), Random.Range(5F, 15F), 0F);
             int index = Random.Range(0, 3);
             Objects = Resources.Load(ObjectDict[index]) as GameObject;
             Instantiate(Objects, randomized, Quaternion.identity);
-            //Burger.gameObject.tag = "cube" + j.ToString();
-            //j++;
         }
 
         #endregion
 
-        score.text = "Score: " + pointsmanager.myPoints.ToString();
+        score.text = pointsmanager.myPoints.ToString();
     }
         
 }

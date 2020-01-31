@@ -29,6 +29,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 4
       Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
     - Class: 28
@@ -36,6 +38,8 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -53,6 +57,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 9388}
     - Class: 114
       Script: {instanceID: 9390}
+    - Class: 114
+      Script: {instanceID: 10142}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -866,7 +872,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: fcbe8a506da1b0ab047c9af96a8bc157
+      Hash: f54d80ebec302488c1245c72c23f63cc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PointsManager
@@ -887,4 +893,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Start.unity
   - Assets/Scenes/Game.unity
   - Assets/Scenes/End.unity
-  playerPath: C:/Users/SalesFromscratchAgen/Documents/Roumi/quick_App1.apk
+  playerPath: C:/Users/SalesFromscratchAgen/Documents/Roumi/AppQuick7.apk
