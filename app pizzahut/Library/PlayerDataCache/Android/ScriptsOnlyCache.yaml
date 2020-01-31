@@ -3,20 +3,24 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - GameManager
     - GameManagerStart
+    - MenuButton
     - ObjectDontDestroy
     - Points
     - PointsManager
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
@@ -27,17 +31,23 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 4
       Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
     - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
       Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 74
+    - Class: 64
       Script: {instanceID: 0}
-    - Class: 81
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -57,8 +67,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 9388}
     - Class: 114
       Script: {instanceID: 9390}
-    - Class: 114
-      Script: {instanceID: 10142}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -168,6 +176,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9292}
     - Class: 114
+      Script: {instanceID: 9330}
+    - Class: 114
       Script: {instanceID: 9332}
     - Class: 114
       Script: {instanceID: 9338}
@@ -183,6 +193,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 9408}
     - Class: 114
       Script: {instanceID: 10142}
+    - Class: 114
+      Script: {instanceID: 13292}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -866,7 +878,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: 37fc880e739504fee6d15294cee749c2
+      Hash: f54d80ebec302488c1245c72c23f63cc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PointsManager
@@ -882,9 +894,15 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuButton
   platform: 13
   scenePathNames:
   - Assets/Scenes/Start.unity
   - Assets/Scenes/Game.unity
   - Assets/Scenes/End.unity
-  playerPath: C:/Users/SalesFromscratchAgen/Documents/Roumi/PizzaHut1.apk
+  playerPath: C:/Users/SalesFromscratchAgen/Documents/Roumi/PizzaHut_App3.apk

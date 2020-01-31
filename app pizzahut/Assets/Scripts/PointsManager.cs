@@ -14,6 +14,8 @@ public class PointsManager : MonoBehaviour
     GameManager manager;
     [HideInInspector]
     public float myPoints;
+    public GameObject visualFX;
+    public GameObject explosionFX;
 
     private void Awake()
     {
@@ -43,18 +45,53 @@ public class PointsManager : MonoBehaviour
             if (Physics.Raycast(ray, out hit, Mathf.Infinity) && hit.collider.gameObject.tag == "clickableObject")
             {
                 myPoints += 1;
+                visualFX = Resources.Load("Uno") as GameObject;
+                Vector3 pos = new Vector3(hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y + 2, 0F);
+                Instantiate(visualFX, pos, Quaternion.identity);
                 Destroy(hit.transform.gameObject);
+                visualFX = null;
+                explosionFX = Resources.Load("Explosion") as GameObject;
+                Vector3 pos2 = new Vector3(hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y, 0F);
+                Instantiate(explosionFX, pos2, Quaternion.identity);
+              
+                explosionFX = null;
             }
             else if (Physics.Raycast(ray, out hit, Mathf.Infinity) && hit.collider.gameObject.tag == "clickableObject3")
             {
                 myPoints += 3;
+                visualFX = Resources.Load("Tres") as GameObject;
+                Vector3 pos = new Vector3(hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y + 2, 0F);
+                Instantiate(visualFX, pos, Quaternion.identity);
                 Destroy(hit.transform.gameObject);
+                visualFX = null;
+                explosionFX = Resources.Load("Explosion") as GameObject;
+                Vector3 pos2 = new Vector3(hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y, 0F);
+                Instantiate(explosionFX, pos2, Quaternion.identity);
+               
+                explosionFX = null;
+            }
+
+            else if (Physics.Raycast(ray, out hit, Mathf.Infinity) && hit.collider.gameObject.tag == "clickableObject2")
+            {
+                myPoints -= 1;
+                visualFX = Resources.Load("Wrong") as GameObject;
+                Vector3 pos = new Vector3(hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y + 2, 0F);
+                Instantiate(visualFX, pos, Quaternion.identity);
+                Destroy(hit.transform.gameObject);
+                visualFX = null;
+                explosionFX = Resources.Load("Explosion") as GameObject;
+                Vector3 pos2 = new Vector3(hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y, 0F);
+                Instantiate(explosionFX, pos2, Quaternion.identity);
+
+                explosionFX = null;
             }
         }
 
+       
+
         #endregion
 
-      /*  if (Input.GetMouseButtonDown(0) == true)
+        if (Input.GetMouseButtonDown(0) == true)
         {
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
@@ -64,15 +101,48 @@ public class PointsManager : MonoBehaviour
                 if (hit.collider.gameObject.tag == "clickableObject")
                 {
                     myPoints += 1;
+                    visualFX = Resources.Load("1Uno") as GameObject;
+                    Vector3 pos = new Vector3(hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y + 2, 0F);
+                    Instantiate(visualFX, pos, Quaternion.identity);
                     Destroy(hit.transform.gameObject);
+                    visualFX = null;
+                    explosionFX = Resources.Load("Explosion") as GameObject;
+                    Vector3 pos2 = new Vector3(hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y, 0F);
+                    Instantiate(explosionFX, pos2, Quaternion.identity);
+                  
+                    explosionFX = null;
                 }
                 else if (hit.collider.gameObject.tag == "clickableObject3")
                 {
                     myPoints += 3;
+                    visualFX = Resources.Load("3Tres") as GameObject;
+                    Vector3 pos = new Vector3(hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y + 2, 0F);
+                    Instantiate(visualFX, pos, Quaternion.identity);
                     Destroy(hit.transform.gameObject);
+                    visualFX = null;
+                    explosionFX = Resources.Load("Explosion") as GameObject;
+                    Vector3 pos2 = new Vector3(hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y, 0F);
+                    Instantiate(explosionFX, pos2, Quaternion.identity);
+                    
+                    explosionFX = null;
+                }
+
+                else if (Physics.Raycast(ray, out hit, Mathf.Infinity) && hit.collider.gameObject.tag == "clickableObject2")
+                {
+                    myPoints -= 1;
+                    visualFX = Resources.Load("Wrong") as GameObject;
+                    Vector3 pos = new Vector3(hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y + 2, 0F);
+                    Instantiate(visualFX, pos, Quaternion.identity);
+                    Destroy(hit.transform.gameObject);
+                    visualFX = null;
+                    explosionFX = Resources.Load("Explosion") as GameObject;
+                    Vector3 pos2 = new Vector3(hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y, 0F);
+                    Instantiate(explosionFX, pos2, Quaternion.identity);
+
+                    explosionFX = null;
                 }
             }
-        }*/
+        }
     }
 }
 

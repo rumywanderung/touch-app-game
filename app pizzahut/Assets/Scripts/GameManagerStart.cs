@@ -20,7 +20,10 @@ public class GameManagerStart : MonoBehaviour
     
     void Update()
     {
-        i--;
+
+        ///////////////TIMER
+
+       /* i--;
         timeLeft -= Time.deltaTime;
         Debug.Log(i);
 
@@ -37,6 +40,9 @@ public class GameManagerStart : MonoBehaviour
         if (i <= 0)
         {
             if (i <= -80) { SceneManager.LoadScene("Game"); }
-        }
+        }*/
+
+
+
     }
 }

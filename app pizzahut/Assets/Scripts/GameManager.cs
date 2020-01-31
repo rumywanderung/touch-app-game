@@ -23,9 +23,13 @@ public class GameManager : MonoBehaviour
     {
         Timer = 0;
         i = 0;
-        ObjectDict.Add(0, "Snowm3n");
-        ObjectDict.Add(1, "burgeroo");
-        ObjectDict.Add(2, "Quickos");
+        ObjectDict.Add(0, "Cheeze");
+        ObjectDict.Add(1, "tomato");
+        ObjectDict.Add(2, "champignon");
+        ObjectDict.Add(3, "poivron");
+        ObjectDict.Add(4, "oignon");
+        ObjectDict.Add(5, "PIZZAHUTLOGO");
+        ObjectDict.Add(6, "Bazil");
     }
 
     void LoadEndScene()
@@ -45,27 +49,25 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(1.0f / Time.deltaTime);
         i++;
         Timer += Time.deltaTime;
 
         #region Create Objects
         if (i >= 1000 || Timer >= 10) //500 | 10
         {
-            Debug.Log("Time's Up!");
-            score.transform.position = new Vector3((Screen.width/2)+55, (Screen.height/2)+20, 0F);
+            score.transform.position = new Vector3(((Screen.width / 2) - 130), (Screen.height / 2) + 80, 0F);
             LoadEndScene();
             score.text = "SCORE FINAL: " + pointsmanager.myPoints.ToString();
             
             return;
         }
         
-        else if (i < 1000 && i % 17 == 0)
+        else if (i < 1000 && i % 12 == 0)
         {
-            Vector3 randomized = new Vector3(Random.Range(-1F, 14F), Random.Range(5F, 20F), 0F);
-            int index = Random.Range(0, 3);
+            Vector3 randomized = new Vector3(Random.Range(0F, 12F), Random.Range(5F, 15F), 0F);
+            int index = Random.Range(0, 7);
             Objects = Resources.Load(ObjectDict[index]) as GameObject;
-            Debug.Log(Objects);
+       
             Instantiate(Objects, randomized, Quaternion.identity);
             //Burger.gameObject.tag = "cube" + j.ToString();
             //j++;
