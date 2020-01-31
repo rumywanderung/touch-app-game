@@ -120,75 +120,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &409467424
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 668726636293156148, guid: d2086d7665176d84c9b16c49c2c2e29d,
-        type: 3}
-      propertyPath: m_Name
-      value: pizzasliceBG
-      objectReference: {fileID: 0}
-    - target: {fileID: 668726636293156150, guid: d2086d7665176d84c9b16c49c2c2e29d,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 668726636293156150, guid: d2086d7665176d84c9b16c49c2c2e29d,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 12.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 668726636293156150, guid: d2086d7665176d84c9b16c49c2c2e29d,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 668726636293156150, guid: d2086d7665176d84c9b16c49c2c2e29d,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 668726636293156150, guid: d2086d7665176d84c9b16c49c2c2e29d,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 668726636293156150, guid: d2086d7665176d84c9b16c49c2c2e29d,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 668726636293156150, guid: d2086d7665176d84c9b16c49c2c2e29d,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 668726636293156150, guid: d2086d7665176d84c9b16c49c2c2e29d,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 668726636293156150, guid: d2086d7665176d84c9b16c49c2c2e29d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 668726636293156150, guid: d2086d7665176d84c9b16c49c2c2e29d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 668726636293156150, guid: d2086d7665176d84c9b16c49c2c2e29d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d2086d7665176d84c9b16c49c2c2e29d, type: 3}
 --- !u!1 &621709607
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,6 +573,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd4b2dba03f4f2b49ae15d704a83b6ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &6307210986823957170
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6827595215086988710, guid: 47bc933f7571ad540bb652742b58b580,
+        type: 3}
+      propertyPath: m_Name
+      value: pizzasliceBG2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827595215086988708, guid: 47bc933f7571ad540bb652742b58b580,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827595215086988708, guid: 47bc933f7571ad540bb652742b58b580,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827595215086988708, guid: 47bc933f7571ad540bb652742b58b580,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827595215086988708, guid: 47bc933f7571ad540bb652742b58b580,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827595215086988708, guid: 47bc933f7571ad540bb652742b58b580,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827595215086988708, guid: 47bc933f7571ad540bb652742b58b580,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827595215086988708, guid: 47bc933f7571ad540bb652742b58b580,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827595215086988708, guid: 47bc933f7571ad540bb652742b58b580,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827595215086988708, guid: 47bc933f7571ad540bb652742b58b580,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827595215086988708, guid: 47bc933f7571ad540bb652742b58b580,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827595215086988708, guid: 47bc933f7571ad540bb652742b58b580,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 47bc933f7571ad540bb652742b58b580, type: 3}
 --- !u!1001 &8419903707481348183
 PrefabInstance:
   m_ObjectHideFlags: 0

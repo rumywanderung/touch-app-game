@@ -21,6 +21,11 @@ public class MenuButton : MonoBehaviour
 
     public void StartGame()
     {
+        SceneManager.LoadScene("Pick");
+    }
+
+    public void GardenLovers()
+    {
         SceneManager.LoadScene("Game");
     }
 }
