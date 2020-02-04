@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
     {
             if (SceneManager.GetSceneByName("End").isLoaded)
             {
-                    score.text = "SCORE FINAL: " + pointsmanager.myPoints.ToString();
+                    score.text = "FINAL SCORE: " + pointsmanager.myPoints.ToString();
             pointsmanager = null;
             pointsmanager2 = null;
         }
