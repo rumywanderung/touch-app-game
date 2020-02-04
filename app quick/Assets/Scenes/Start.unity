@@ -753,7 +753,7 @@ PrefabInstance:
     - target: {fileID: 2673882672424581503, guid: 629d90f73833e36459d9685d9a0e11ff,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -332
+      value: -357
       objectReference: {fileID: 0}
     - target: {fileID: 2673882672424581503, guid: 629d90f73833e36459d9685d9a0e11ff,
         type: 3}
@@ -829,12 +829,17 @@ PrefabInstance:
     - target: {fileID: 2673882672424581502, guid: 629d90f73833e36459d9685d9a0e11ff,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 120
+      value: 115
       objectReference: {fileID: 0}
     - target: {fileID: 2673882672424581502, guid: 629d90f73833e36459d9685d9a0e11ff,
         type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673882672424581502, guid: 629d90f73833e36459d9685d9a0e11ff,
+        type: 3}
+      propertyPath: m_Text
+      value: Tape un max d'objets !
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 629d90f73833e36459d9685d9a0e11ff, type: 3}

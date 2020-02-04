@@ -11,7 +11,7 @@ public class ObjectDontDestroy : MonoBehaviour
 
     void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+       // DontDestroyOnLoad(this.gameObject);
         //currentScene = SceneManager.GetActiveScene();
     }
     /*

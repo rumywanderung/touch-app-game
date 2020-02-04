@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1697554416679389241}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: clickableObject
+  m_TagString: clickableObject2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 1682498440957049874}
   m_Layer: 0
   m_Name: oignon
-  m_TagString: clickableObject
+  m_TagString: clickableObject2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
