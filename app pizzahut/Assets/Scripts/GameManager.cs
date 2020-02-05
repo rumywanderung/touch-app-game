@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    float Timer;
+    public float Timer;
     int i;
     public Text score; //score text
     public GameObject pointsmanager2 = null;
@@ -60,12 +60,16 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-            if (SceneManager.GetSceneByName("End").isLoaded)
+
+        if (SceneManager.GetSceneByName("End").isLoaded)
             {
-                    score.text = "FINAL SCORE: " + pointsmanager.myPoints.ToString();
-            pointsmanager = null;
-            pointsmanager2 = null;
-        }
+            if (score != null)
+            {
+                score.text = "FINAL SCORE: " + pointsmanager.myPoints.ToString();
+            }
+                pointsmanager = null;
+                pointsmanager2 = null;
+            }
 
             if (SceneManager.GetSceneByName("Game").isLoaded)
             {
@@ -85,10 +89,10 @@ public class GameManager : MonoBehaviour
 
                 i++;
                 Timer += Time.deltaTime;
-                Debug.Log(Timer);
+               
                 #region Create Objects
 
-                if (i >= 1000 || Timer >= 10) //500 | 10
+                if (Timer >= 40F) //500 | 10
                 {
                     score.transform.position = new Vector3(((Screen.width / 2) - 47), (Screen.height / 2) + 750, 0F);
                     LoadEndScene();
@@ -96,7 +100,7 @@ public class GameManager : MonoBehaviour
                     return;
                 }
 
-                else if (i < 1000 && i % 12 == 0)
+                else if (Timer < 40F && i % 12 == 0)
                 {
                     Vector3 randomized = new Vector3(Random.Range(0F, 12F), Random.Range(5F, 15F), 0F);
                     int index = Random.Range(0, 7);

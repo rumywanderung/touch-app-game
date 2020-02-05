@@ -48,6 +48,11 @@ public class MenuButton : MonoBehaviour
         SceneManager.LoadScene("INGR_3");
     }
 
+    public void Tutorial()
+    {
+        SceneManager.LoadScene("Tuto");
+    }
+
     public void MakeIt_GL()
     {
         SceneManager.LoadScene("Game");

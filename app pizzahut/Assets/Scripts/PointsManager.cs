@@ -60,7 +60,7 @@ public class PointsManager : MonoBehaviour
             else if (Physics.Raycast(ray, out hit, Mathf.Infinity) && hit.collider.gameObject.tag == "clickableObject3")
             {
                 myPoints += 5;
-                visualFX = Resources.Load("PPCinq") as GameObject;
+                visualFX = Resources.Load("PPCinco") as GameObject;
                 Vector3 pos = new Vector3(hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y + 2, 0F);
                 Instantiate(visualFX, pos, Quaternion.identity);
                 Destroy(hit.transform.gameObject);
@@ -76,24 +76,24 @@ public class PointsManager : MonoBehaviour
             else if (Physics.Raycast(ray, out hit, Mathf.Infinity) && hit.collider.gameObject.tag == "clickableObject2")
             {
                 myPoints -= 1;
-                visualFX = Resources.Load("PPX") as GameObject;
+                visualFX = Resources.Load("MinusONE2") as GameObject;
                 Vector3 pos = new Vector3(hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y + 2, 0F);
                 Instantiate(visualFX, pos, Quaternion.identity);
                 Destroy(hit.transform.gameObject);
-
-                //explosionFX = Resources.Load("Explosion") as GameObject;
-                //Vector3 pos2 = new Vector3(hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y, 0F);
-                //Instantiate(explosionFX, pos2, Quaternion.identity);
+                
                 visualFX = null;
                 explosionFX = null;
             }
+
+            visualFX = null;
+            explosionFX = null;
         }
 
        
 
         #endregion
         
-      /*  if (Input.GetMouseButtonDown(0) == true)
+       if (Input.GetMouseButtonDown(0) == true)
         {
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
@@ -118,7 +118,7 @@ public class PointsManager : MonoBehaviour
                 else if (hit.collider.gameObject.tag == "clickableObject3")
                 {
                     myPoints += 5;
-                    visualFX = Resources.Load("PPCinq") as GameObject;
+                    visualFX = Resources.Load("PPCinco") as GameObject;
                     Vector3 pos = new Vector3(hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y + 2, 0F);
                     Instantiate(visualFX, pos, Quaternion.identity);
                     Destroy(hit.transform.gameObject);
@@ -134,7 +134,7 @@ public class PointsManager : MonoBehaviour
                 else if (Physics.Raycast(ray, out hit, Mathf.Infinity) && hit.collider.gameObject.tag == "clickableObject2")
                 {
                     myPoints -= 1;
-                    visualFX = Resources.Load("PPX") as GameObject;
+                    visualFX = Resources.Load("MinusONE2") as GameObject;
                     Vector3 pos = new Vector3(hit.collider.gameObject.transform.position.x, hit.collider.gameObject.transform.position.y + 2, 0F);
                     Instantiate(visualFX, pos, Quaternion.identity);
                     Destroy(hit.transform.gameObject);
@@ -147,7 +147,7 @@ public class PointsManager : MonoBehaviour
                     explosionFX = null;
                 }
             }
-        }*/
+        }
     }
 }
 

@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 4542237856146972587}
   - component: {fileID: 1953492916993881355}
   - component: {fileID: 8210321826846389791}
-  - component: {fileID: 8674451967984708935}
+  - component: {fileID: 8063120701684473426}
   m_Layer: 0
   m_Name: PP5
   m_TagString: Untagged
@@ -124,7 +124,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!95 &8674451967984708935
+--- !u!95 &8063120701684473426
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -134,7 +134,7 @@ Animator:
   m_GameObject: {fileID: 4422617407553847750}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dc01fa4e7873c554c96a0ccae765e640, type: 2}
+  m_Controller: {fileID: 9100000, guid: 60cda54cf2ffae4418dd8cd620fe4270, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

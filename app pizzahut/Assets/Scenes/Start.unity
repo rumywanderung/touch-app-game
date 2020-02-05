@@ -479,11 +479,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
-    - target: {fileID: 8419903706786608420, guid: 8cf43f8539c38fc4caede47ae7fdc69b,
-        type: 3}
-      propertyPath: m_ClearFlags
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 8419903706786608419, guid: 8cf43f8539c38fc4caede47ae7fdc69b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -553,6 +548,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.2266
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419903706786608420, guid: 8cf43f8539c38fc4caede47ae7fdc69b,
+        type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cf43f8539c38fc4caede47ae7fdc69b, type: 3}
